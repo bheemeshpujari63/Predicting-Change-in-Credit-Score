@@ -1,0 +1,16 @@
+pandas==1.5.3
+numpy==1.23.5
+scikit-learn==1.2.2
+matplotlib==3.7.1
+seaborn==0.12.2
+imbalanced-learn==0.10.1
+shap==0.42.1
+jupyter==1.0.0
+tensorflow
+keras
+torch
+torchvision
+xgboost
+lightgbm
+flask
+requests
