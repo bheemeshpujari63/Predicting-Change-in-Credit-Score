@@ -65,19 +65,19 @@ To simulate real-world credit movement trends without historical bureau data, th
 
 - **Dataset Size**: 50,000 rows
 - **Target Balance (after injection)**:
-  - `stable`: 65%
-  - `increase`: 22%
-  - `decrease`: 13%
+  - `increase`: 80.15% (40,073 rows)
+  - `stable`: 14.85% (7,427 rows)
+  - `decrease`: 5.00% (2,500 rows)
 
 ## EDA Insights
 
-Refer to `notebook.ipynb` for full plots and images.
+Refer to `notebook folder` for full plots and images.
 
 ### 1. Target Distribution
-- Imbalanced target with `stable` dominating.
-- `decrease` class is small but business-critical.
+- Highly imbalanced target with `increase` dominating at 80.15% (40,073 rows), followed by `stable` at 14.85% (7,427 rows), and `decrease` at 5.00% (2,500 rows).
+- The `decrease` class, though a small minority, is business-critical as it represents customers at risk of credit score decline.
 
-**Action**: Focus on achieving high recall for the `decrease` class to identify at-risk customers.
+**Action**: Emphasize high recall for the `decrease` class to ensure at-risk customers are identified, using techniques like SMOTE to address the imbalance.
 
 ### 2. Risk Score Distribution
 - Risk score peaks near 0.3 (low risk), with a tail above 0.7 (high risk).
